@@ -1,0 +1,28 @@
+/* Ensure the body has a margin and some padding */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    margin-bottom: 20px;
+}
+
+/* Style the footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Style the jumbotron */
+.jumbotron {
+    background-color: #f8f9fa;
+}
+
+/* Style the cards */
+.card {
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+}

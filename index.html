@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <!-- Link to Bootstrap CSS for styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link to custom stylesheet for additional styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation bar with links to different sections of the dashboard -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Weather Dashboard</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="humidity.html">Humidity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="temperature.html">Temperature</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="soil-moisture.html">Soil Moisture</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" class="container">
+        <div class="jumbotron mt-4">
+            <!-- Main welcome section of the dashboard -->
+            <h1 class="display-4">Welcome to the Weather Dashboard</h1>
+            <p class="lead">Explore the latest data on humidity, temperature, and soil moisture.</p>
+            <hr class="my-4">
+            <p>Use the navigation bar to switch between different data views.</p>
+        </div>
+
+        <section>
+            <div class="row">
+                <!-- Card for navigating to the humidity data page -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Humidity</h5>
+                            <p class="card-text">Check the current humidity levels.</p>
+                            <a href="humidity.html" class="btn btn-primary">View Humidity</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card for navigating to the temperature data page -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Temperature</h5>
+                            <p class="card-text">View the latest temperature readings.</p>
+                            <a href="temperature.html" class="btn btn-primary">View Temperature</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card for navigating to the soil moisture data page -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Soil Moisture</h5>
+                            <p class="card-text">Check soil moisture levels.</p>
+                            <a href="soil-moisture.html" class="btn btn-primary">View Soil Moisture</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <!-- Footer of the webpage -->
+        <p>&copy; 2024 Weather Dashboard. All rights reserved.</p>
+    </footer>
+
+    <!-- Include JavaScript libraries for Bootstrap functionality -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Link to custom JavaScript file -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
