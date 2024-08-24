@@ -1,5 +1,5 @@
 // Replace with Our Blynk API token Id
-const BLYNK_TOKEN = 'token';
+const BLYNK_TOKEN = 'YmB9kZNUSawoHzqcH_iNht18idGLpZbJ';
 const SERVER_ADDRESS = 'blr1.blynk.cloud';
 
 // Function to fetch humidity data
@@ -26,7 +26,7 @@ function fetchTemperatureData() {
 
 // Function to fetch soil moisture data
 function fetchSoilMoistureData() {
-    fetch(`https://${SERVER_ADDRESS}/external/api/get?token=${BLYNK_TOKEN}&v2`)
+    fetch(`https://${SERVER_ADDRESS}/external/api/get?token=${BLYNK_TOKEN}&v3`)
         .then(response => response.json())
         .then(data => {
             // Update the HTML element with the fetched data
